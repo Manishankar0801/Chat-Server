@@ -19,45 +19,40 @@ The server runs on a machine and is bound to a specific port. The client sends t
 ### **1. Users Command**
 
 This command lists all the usernames of the clients that are connected to the server when the request was sent. The server sends this list to the client that requested it.
-
-    ```
+    
     /users
-    ```
+    
 ![Alt text](image.png)
 
 ### **2. DM Command**
 
 A client sends this command to send a message to the user specified in the command. The server receives this command from the client and sends the message to the corresponding user.
-
-    ``
+    
     /dm User_2 “Hello there!”
-    ```
+    
 
 ![Alt text](image-1.png)
 
 ### **3. BC Command**
 
 A client sends this command to the server to broadcast the message to all the connected users. The server receives this command and sends the message to the rest of the clients.
-
-    ```
+    
     /bc “Hello everyone!!!”
-    ```
+    
 ![Alt text](image-2.png)
 
 ### **4. Help Command**
 
 When the client enters this command, a list of valid commands is displayed to the client. The client can refer to the commands for help.
-
-    ```
+    
     /help
-    ```
+    
 ![Alt text](image-3.png)
 
 5. Quit Command
 
 When the client enters this command, this request is sent to the server. The server then disconnects the client and notifies the remaining clients that corresponding client has left the chat.
-
-    ```
+    
     /quit
-    ```
+    
 ![Alt text](image-4.png)
